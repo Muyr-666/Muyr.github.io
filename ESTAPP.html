@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>App下载</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f8f9fa;
+        }
+        .download-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 18px;
+        }
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 25px auto;
+            padding: 20px 30px;
+            font-size: 20px;
+            color: white;
+            text-decoration: none;
+            border-radius: 15px;
+            width: 300px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+        .android {
+            background: linear-gradient(135deg, #3DDC84 0%, #4CAF50 100%);
+        }
+        .ios {
+            background: linear-gradient(135deg, #007AFF 0%, #0056CC 100%);
+        }
+        .logo {
+            width: 40px;
+            height: 40px;
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            border-radius: 10px;
+            background-color: rgba(255,255,255,0.2);
+        }
+        .btn-content {
+            text-align: left;
+            flex-grow: 1;
+        }
+        .btn-title {
+            font-weight: bold;
+            display: block;
+        }
+        .btn-subtitle {
+            font-size: 14px;
+            opacity: 0.9;
+            display: block;
+        }
+        .device-image {
+            width: 30px;
+            opacity: 0.8;
+        }
+        .instructions {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            text-align: left;
+            color: #555;
+        }
+        .instructions h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        .instructions ul {
+            padding-left: 20px;
+        }
+        .instructions li {
+            margin-bottom: 10px;
+        }
+        .footer {
+            margin-top: 40px;
+            color: #999;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="download-container">
+        <h1>App下载中心</h1>
+        <p class="subtitle">选择您的设备类型进行下载</p>
+        
+        <!-- 安卓下载按钮 -->
+        <a href="
+https://est-ble.oss-cn-guangzhou.aliyuncs.com/EST-BLE%201.0.zip" 
+           class="btn android" 
+           download>
+            <div class="logo">
+                <!-- 安卓Logo -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="white">
+                    <path d="M17.523 15.3414c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.5511 0 .9993.4482.9993.9993.0001.5511-.4482.9997-.9993.9997m-11.046 0c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.5511 0 .9993.4482.9993.9993 0 .5511-.4482.9997-.9993.9997m11.4045-6.02l1.9973-3.4592a.416.416 0 00-.1521-.5676.416.416 0 00-.5676.1521l-2.0223 3.503C15.5902 8.2439 13.8533 7.8508 12 7.8508s-3.5902.3931-5.1682 1.0789L4.8095 5.4267a.4161.4161 0 00-.5677-.1521.4157.4157 0 00-.1521.5676l1.9973 3.4592C2.8349 9.1884 0 13.0509 0 17.6186v3.5265c0 .7939.6433 1.4372 1.4372 1.4372h21.1256c.7939 0 1.4372-.6433 1.4372-1.4372v-3.5265c0-4.5677-2.8349-8.4302-6.8795-9.2972"/>
+                </svg>
+            </div>
+            <div class="btn-content">
+                <span class="btn-title">下载 Android 版</span>
+                <span class="btn-subtitle">APK安装包 | 适用于Android 8.0+</span>
+            </div>
+            <div class="device-image">
+                <!-- 安卓手机图标 -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="white">
+                    <path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/>
+                </svg>
+            </div>
+        </a>
+        
+        <!-- iOS下载按钮 -->
+        <a href="https://testflight.apple.com/join/你的TestFlight邀请码" 
+           class="btn ios">
+            <div class="logo">
+                <!-- 苹果Logo -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="white">
+                    <path d="M14.94,5.19A4.38,4.38,0,0,0,16,2,4.44,4.44,0,0,0,13,3.52,4.17,4.17,0,0,0,12,6.61,3.69,3.69,0,0,0,14.94,5.19Zm2.52,7.44a4.51,4.51,0,0,1,2.16-3.81,4.66,4.66,0,0,0-3.66-2c-1.56-.16-3,.91-3.83.91s-2-.89-3.3-.87A4.92,4.92,0,0,0,4.69,9.39C2.93,12.45,4.24,17,6,19.47,6.8,20.68,7.8,22.05,9.12,22s1.75-.76,3.28-.76,2,.76,3.3.73,2.22-1.24,3.06-2.45a11,11,0,0,0,1.38-2.85A4.41,4.41,0,0,1,17.46,12.63Z"/>
+                </svg>
+            </div>
+            <div class="btn-content">
+                <span class="btn-title">下载 iOS 版</span>
+                <span class="btn-subtitle">TestFlight测试 | 适用于iOS 12.0+</span>
+            </div>
+            <div class="device-image">
+                <!-- iPhone图标 -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="white">
+                    <path d="M15.5 1h-8A2.5 2.5 0 0 0 5 3.5v17A2.5 2.5 0 0 0 7.5 23h8a2.5 2.5 0 0 0 2.5-2.5v-17A2.5 2.5 0 0 0 15.5 1zm-4 21c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4.5-4H7V4h9v14z"/>
+                </svg>
+            </div>
+        </a>
+        
+        <div class="instructions">
+            <h3>安装说明：</h3>
+            <ul>
+                <li><strong>Android用户</strong>：点击上方绿色按钮下载APK文件，下载完成后点击安装</li>
+                <li><strong>iOS用户</strong>：点击上方蓝色按钮进入TestFlight测试页面，按照提示安装</li>
+                <li>首次安装可能需要允许"未知来源"应用（Android）或信任企业证书（iOS）</li>
+                <li>如遇下载问题，请尝试更换网络环境或使用电脑下载后传输到手机</li>
+            </ul>
+        </div>
+        
+        <div class="footer">
+            <p>© 2024 应用下载中心 | 如有问题请联系: support@example.com</p>
+        </div>
+    </div>
+    
+    <script>
+        // 简单的下载统计
+        document.querySelectorAll('.btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const isAndroid = this.classList.contains('android');
+                const platform = isAndroid ? 'android' : 'ios';
+                
+                // 这里可以添加下载统计代码
+                console.log(`${platform} 下载按钮被点击`);
+                
+                // 如果您有Google Analytics，可以在这里添加事件跟踪
+                // if (typeof gtag !== 'undefined') {
+                //     gtag('event', 'download', {
+                //         'event_category': 'app',
+                //         'event_label': platform
+                //     });
+                // }
+            });
+        });
+        
+        // 检测设备类型，给出相应提示
+        window.addEventListener('DOMContentLoaded', () => {
+            const userAgent = navigator.userAgent.toLowerCase();
+            const isAndroid = /android/.test(userAgent);
+            const isIOS = /iphone|ipad|ipod/.test(userAgent);
+            
+            if (isAndroid) {
+                console.log('检测到Android设备，推荐下载Android版本');
+            } else if (isIOS) {
+                console.log('检测到iOS设备，推荐下载iOS版本');
+            }
+        });
+    </script>
+</body>
+</html>
